@@ -7,11 +7,13 @@ terraform {
   }
   backend "s3" {
      bucket = "soumya-tf-dev"
-    key    = "expense-dev-vpc" #you should have unique keys with i the bucket , same keys should not useed in other repos or tf projects
+    key    = "expense-dev-bastion" #you should have unique keys with i the bucket , same keys should not useed in other repos or tf projects
     region = "us-east-1"
     dynamodb_table = "tf-dev"
   }
+
 }
+
 provider "aws" {
   # Configuration options
   region = "us-east-1"
