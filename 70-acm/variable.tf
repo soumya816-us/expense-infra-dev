@@ -20,3 +20,7 @@ variable "domain_name" {
   default = "telugustreetbyte.online"
   
 }
+
+variable "zone_id" {
+  default = "Z03706093F6CZRPJ7KSFC"
+} 
